@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/cover"/>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:id="@+id/TopView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <Button
+            android:elevation="10dp"
+            android:id="@+id/btn_dialog_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:backgroundTint="#F44336"
+            android:padding="@dimen/btn_padding"
+            android:onClick="buttonClickEvent"
+            android:text="কার্যবিধি"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_dialog_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_margin"
+            android:background="@drawable/shape"
+            android:backgroundTint="#E91E63"
+            android:padding="@dimen/btn_padding"
+            android:onClick="buttonClickEvent"
+            android:text="সাক্ষ্য আইন"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_dialog_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_margin"
+            android:background="@drawable/shape"
+            android:backgroundTint="#9C27B0"
+            android:onClick="buttonClickEvent"
+            android:padding="@dimen/btn_padding"
+            android:text="পুলিশ আইন"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_dialog_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_margin"
+            android:background="@drawable/shape"
+            android:backgroundTint="#3F51B5"
+            android:onClick="buttonClickEvent"
+            android:padding="@dimen/btn_padding"
+            android:text="দণ্ডবিধি আইন"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_dialog_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_margin"
+            android:background="@drawable/shape"
+            android:backgroundTint="#2196F3"
+            android:onClick="buttonClickEvent"
+            android:padding="@dimen/btn_padding"
+            android:text="পিআরবি"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/btn_margin"
+            android:background="@drawable/shape"
+            android:backgroundTint="#009688"
+            android:onClick="buttonClickEvent"
+            android:drawableEnd="@drawable/ic_add"
+            android:drawableRight="@drawable/ic_add"
+            android:padding="@dimen/btn_padding"
+            android:text="মাইনর এক্ট"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/minus_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="#009688"
+            android:onClick="buttonClickEvent"
+            android:drawableEnd="@drawable/ic_minus"
+            android:drawableRight="@drawable/ic_minus"
+            android:padding="@dimen/btn_padding"
+            android:text="মাইনর এক্ট"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:id="@+id/ButtomView"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_dialog7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:onClick="buttonClickEvent"
+                android:background="@drawable/shape"
+                android:backgroundTint="#4CAF50"
+                android:padding="@dimen/btn_padding"
+                android:text="ডিএমপি বিধিমালা ১৯৭৬ এর প্রয়োজনীয় ধারা"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:onClick="buttonClickEvent"
+                android:backgroundTint="#FF9800"
+                android:background="@drawable/shape"
+                android:padding="@dimen/btn_padding"
+                android:text="বিস্ফোরক আইন এর প্রয়োজনীয় ধারা"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonClickEvent"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:backgroundTint="#FF5722"
+                android:padding="@dimen/btn_padding"
+                android:background="@drawable/shape"
+                android:text="বিশেষ ক্ষমতা আইন ১৯৭৪ এর প্রয়োজনীয় ধারাসমূহ"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:backgroundTint="#795548"
+                android:onClick="buttonClickEvent"
+                android:padding="@dimen/btn_padding"
+                android:background="@drawable/shape"
+                android:text="তথ্য যোগাযোগ ও প্রযুক্তি আইন ২০১৩ এর প্রয়োজনীয় ধারাসমূহ"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:backgroundTint="#607D8B"
+                android:onClick="buttonClickEvent"
+                android:background="@drawable/shape"
+                android:padding="@dimen/btn_padding"
+                android:text="তথ্য যোগাযোগ ও প্রযুক্তি আইন ২০১৩ এর প্রয়োজনীয় ধারাসমূহ"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_dialog_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonClickEvent"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:backgroundTint="#4CAF50"
+                android:background="@drawable/shape"
+                android:padding="@dimen/btn_padding"
+                android:text="মাদক দ্রব্য নিয়ন্ত্রণ আইনের প্রয়োজনীয় ধারা সমূহ"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog_13"
+                android:layout_width="match_parent"
+                android:onClick="buttonClickEvent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:backgroundTint="#FF9800"
+                android:background="@drawable/shape"
+                android:padding="@dimen/btn_padding"
+                android:text="মানব পাচার প্রতিরোধ ও দমন আইন ২০১২ এর প্রয়োজনীয় ধারা সমূহ"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog_14"
+                android:layout_width="match_parent"
+                android:onClick="buttonClickEvent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:backgroundTint="#FF5722"
+                android:background="@drawable/shape"
+                android:padding="@dimen/btn_padding"
+                android:text="নারী ও শিশু নির্যাতন দমন আইন-২০০০(সংশোধন)-২০০৩ এর প্রয়োজনীয় ধারা সমূহ"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:onClick="buttonClickEvent"
+                android:backgroundTint="#795548"
+                android:padding="@dimen/btn_padding"
+                android:text="অস্ত্র আইনের প্রয়োজনীয় ধারা সমূহ"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shape"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_dialog_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:backgroundTint="#607D8B"
+                android:onClick="buttonClickEvent"
+                android:padding="@dimen/btn_padding"
+                android:text="মটরযান আইনের প্রয়োজনীয় ধারা সমূহ"
+                android:background="@drawable/shape"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/btn_dialog_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/btn_margin"
+                android:onClick="buttonClickEvent"
+                android:backgroundTint="#607D8B"
+                android:padding="@dimen/btn_padding"
+                android:text="রেলওয়ে আইনের প্রয়োজনীয় ধারা সমূহ"
+                android:textColor="@android:color/white"
+                android:background="@drawable/shape"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>
